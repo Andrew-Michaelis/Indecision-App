@@ -12,7 +12,17 @@ module.exports = {
             loader: "babel-loader",
             test: /\.js$/, //ends in .js
             exclude: /node_modules/ //not from node modules
+        },{
+            test: /\.scss$/, //ends in .css
+            use: [
+                "style-loader",
+                "css-loader",
+                "sass-loader"
+            ]
         }]
     },
-    devtool: "cheap-module-eval-source-map"
+    devtool: "cheap-module-eval-source-map",
+    devServer: {
+        contentBase: path.join(__dirname,"public")
+    }
 };
