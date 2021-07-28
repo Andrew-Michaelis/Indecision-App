@@ -1,6 +1,2 @@
-$brand-color: #bada55;
-
-* {
-    background-color: black;
-    color: $brand-color;
-}
+@import "./base/base";
+@import "./components/header";
