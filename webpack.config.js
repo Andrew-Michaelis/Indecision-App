@@ -13,7 +13,7 @@ module.exports = {
             test: /\.js$/, //ends in .js
             exclude: /node_modules/ //not from node modules
         },{
-            test: /\.scss$/, //ends in .css
+            test: /\.s?css$/, //ends in .css
             use: [
                 "style-loader",
                 "css-loader",

@@ -1,18 +1,24 @@
 .header {
-    background: #20222b;
+    background: $off-black;
     color: #bada55;
-    margin-bottom: 4.8rem;
-    padding: 1.6rem 0;
+    margin-bottom: $s-size;
+    padding: $s-size 0;
 }
 // BEM Block Element Modifier naming convention
 .header__title {
-    font-size: 3.2rem;
+    font-size: $m-size;
     margin: 0;
 }
 
 .header__subtitle {
-    color: #a5afd7;
-    font-size: 1.6rem;
+    color: $off-white;
+    font-size: $s-size;
     font-weight: 500;
     margin: 0;
+}
+
+@media (min-width: $desktop-breakpoint) {
+    .header {
+        margin-bottom: $l-size;
+    }
 }
